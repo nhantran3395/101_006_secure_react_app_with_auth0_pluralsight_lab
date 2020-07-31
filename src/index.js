@@ -3,10 +3,16 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router } from "react-router-dom";
+import Auth0ProviderWithHistory from "./Auth/Auth0ProviderWithHIstory";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Auth0ProviderWithHistory>
+        <App />
+      </Auth0ProviderWithHistory>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
