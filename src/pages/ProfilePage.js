@@ -9,6 +9,7 @@ const ProfilePage = () => {
     const getTokens = async () => {
       const accessToken = await getAccessTokenSilently();
       alert(`accessToken:${accessToken}`);
+      console.log(accessToken);
     };
 
     getTokens();
