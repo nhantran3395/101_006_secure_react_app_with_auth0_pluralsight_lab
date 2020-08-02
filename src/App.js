@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
+import MessagePage from "./pages/MessagePage";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Switch>
         <Route path="/profile">
           <ProfilePage />
+        </Route>
+        <Route path="/message">
+          <MessagePage />
         </Route>
         <Route path="/">
           <HomePage />

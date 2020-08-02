@@ -11,13 +11,14 @@ const Header = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Navbar.Brand>
-        <NavLink to="/">React-Bootstrap</NavLink>
+        <NavLink to="/">Auth0 Secured App</NavLink>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/profile">Profile</NavLink>
+          <NavLink to="/message">Message</NavLink>
         </Nav>
         {!isAuthenticated ? <LoginButton /> : <LogoutButton />}
       </Navbar.Collapse>
